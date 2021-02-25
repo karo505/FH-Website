@@ -1,0 +1,15 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 21px;
+    color: white;
+    background-color:black;
+
+}
+
+img#retina-logo {
+    width: 292px;
+}
