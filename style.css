@@ -18,6 +18,20 @@ body {
     clear: both;
 }
 
+p.text-black {
+    color: #000;
+}
+
+button {
+    background-color: #fff;
+    color: #D2B429;
+    font-family: 'Cormorant Upright';
+    text-align: center;
+    border: solid 1px #D2B429;
+    font-size: 21px;
+    
+}
+
 
 
 /*---Nav---*/
@@ -211,6 +225,32 @@ header#header {
 
 
 
+/*---Section Documents---*/
+
+section#documents {
+    background-color: #fff;
+    display: flex;
+    padding: 80px 0px;
+
+}
+
+#section-row {
+    max-width: 1140px;
+    min-height: 130px;
+        display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-white {
+    width: 100%;
+}
+
+.section-right-align {
+    position: relative;
+    margin-right:0;
+}
 
 
 
