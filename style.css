@@ -1,4 +1,7 @@
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color:black;
@@ -11,17 +14,63 @@ body {
 
 }
 
+.clear {
+    clear: both;
+}
+
 /*---Nav---*/
 
+nav#menu {
+    max-width: 1140px;
+    min-height: 130px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+}
+
+
+
+
+nav#menu ul, li.menu-item {
+list-style: none;
+    display: inline;
+    
+   
+}
+
+.phone-menu {
+    color: #D2B429;
+    font-size: 1rem;
+    padding: 13px 20px;
+
+}
+
+a.phone-menu {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a.link-menu {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 13px 20px;
+}
+
+#nav-center {
+    width: 200px;
+}
+
 img#retina-logo {
-    width: 292px;
+    width: 100%;
+
 }
 
 
 /*---Header---*/
 
 header#header {
-    background-image: url('../img/zaklad-pogrzebowy-paslek.jpg');
+    background-image: url('img/zaklad-pogrzebowy-paslek.jpg');
     background-position: center;
     height: 100vh;
     position: relative;
