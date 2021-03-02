@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 21px;
+    font-size: 20px;
     color: white;
     
 
@@ -18,51 +18,142 @@ body {
     clear: both;
 }
 
+
+
 /*---Nav---*/
 
 nav#menu {
     max-width: 1140px;
     min-height: 130px;
-    position: fixed;
+    position: relative;
     z-index: 999;
     display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+
+#menu-row {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+#nav-left {
+    width: 40%;
+    align-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding-top: 55px;
+
 }
 
 
+#nav-right {
+    width: 20%;
+    align-content: center;
+    align-items: center;
+    margin-left: 20px;
+    padding-top: 55px;
+    text-align: center;
+}
+
+#nav-center {
+    width: 20%;
+    align-content: center;
+    align-items: center;
+  
+}
+
+#phone {
+    width: 20%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+nav#menu #menu-row ul {
+    padding: 0;
+}
 
 
 nav#menu ul, li.menu-item {
-list-style: none;
+    list-style: none;
     display: inline;
     
-   
+ 
 }
 
 .phone-menu {
     color: #D2B429;
     font-size: 1rem;
-    padding: 13px 20px;
+    margin-bottom: 0px;
+    padding-top: 40px;
+
+
 
 }
 
 a.phone-menu {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 a.link-menu {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    padding: 13px 20px;
+    padding: 55px 13px 55px 20px;
+    position: relative;
 }
 
-#nav-center {
-    width: 200px;
+a.link-menu::after {
+    content: "";
+    bottom: 3px;
+    height: 3px;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+ 
+}
+
+a.link-menu:hover::after {
+    opacity: 1; 
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    
+}
+
+
+
+section#logo {
+    height: 0px;
+}
+
+#row-logo {
+    max-width: 230px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#logo-container {
+    
 }
 
 img#retina-logo {
-    width: 100%;
+    width: 250px;
+    margin: -70px 0px 0px 0px;
+    padding-bottom: 10px;
 
 }
 
