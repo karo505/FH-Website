@@ -18,7 +18,7 @@ body {
     clear: both;
 }
 
-p.text-black {
+.text-black {
     color: #000;
     line-height: 1.8em;
 }
@@ -50,6 +50,14 @@ p.button-text {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+}
+
+h3 {
+    color: #000;
+    font-size: 30px;
+    line-height: 1.8em;
+    font-family: 'Cormorant Upright';
+    text-align: center;
 }
 
 
@@ -298,7 +306,7 @@ p.signature {
     text-align: center;
     font-size: 2.2rem;
     color: #fff;
-    padding-left:6em;
+    padding-left:13em;
 }
 
 span.signature-position {
@@ -307,9 +315,58 @@ span.signature-position {
 }
 
 
+/*---Section Services---*/
+
+section#services {
+    background-color: #fff;
+    display:flex;
+    padding: 60px 0px;
+}
+
+#services-text {
+    display: block;
+    margin-bottom: 2em;
+}
+
+ul.service-list {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+li.service-list-item {
+    width: calc(33% - 2rem);
+    margin-bottom: 2rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.service-list-image img {
+    height: 230px;
+    box-shadow: 0 0 10px 4px rgb(0 0 0 / 20%);
+    object-fit: cover;
+}
 
 
+.section-row-services {
+    max-width: 1140px;
+    min-height: 130px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+
+li.service-list-item:nth-child(3n+2) {
+    margin: 0 40px;
+}
+
+.text-services {
+    text-align: center;
+}
 
 
 
