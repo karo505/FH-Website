@@ -10,7 +10,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     color: white;
-    
+      
 
 }
 
@@ -20,6 +20,12 @@ body {
 
 p.text-black {
     color: #000;
+    line-height: 1.8em;
+}
+
+p.text-white {
+    color: #fff;
+    line-height: 1.8em;
 }
 
 button {
@@ -32,6 +38,19 @@ button {
     
 }
 
+p.button-text {
+    padding: 8px;
+}
+
+
+.section-row {
+    max-width: 1140px;
+    min-height: 130px;
+        display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /*---Nav---*/
@@ -120,7 +139,7 @@ a.link-menu {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    padding: 55px 13px 55px 20px;
+    padding: 55px 20px 55px 20px;
     position: relative;
 }
 
@@ -199,10 +218,11 @@ header#header {
     width:60%;
     margin-left:auto;
     margin-right:auto;
-    position: relative;
-    margin-bottom: 20px;
-    display: block;
+    position: relative;   
+    /*--display: block;
+    margin-bottom: 20px;--*/
     padding: 10px;
+    height: 100%;
 
 }
 
@@ -210,7 +230,7 @@ header#header {
     font-family: 'Cormorant Upright';
     text-align: center;
     font-size: 4.5rem;
-    margin-top: 50%;
+    margin-top: 30%;
 }
 
 #header-text {
@@ -230,27 +250,62 @@ header#header {
 section#documents {
     background-color: #fff;
     display: flex;
-    padding: 80px 0px;
+    padding: 60px 0px;
 
 }
 
-#section-row {
-    max-width: 1140px;
-    min-height: 130px;
-        display: flex;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .section-white {
     width: 100%;
 }
 
 .section-right-align {
-    position: relative;
-    margin-right:0;
+    position: absolute;
+    right:0;
+    padding: 2em 0;
 }
+
+
+
+
+/*---Section About---*/
+
+section#about {
+    background-color: #000;
+    display: flex;
+    padding: 60px 0px;
+    background-image: url('img/roza.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+
+h1#about {
+    font-family: 'Cormorant Upright';
+    text-align: left;
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+#text-about {
+    width: 60%;
+    
+}
+
+p.signature {
+    font-family: 'Cormorant Upright';
+    text-align: center;
+    font-size: 2.2rem;
+    color: #fff;
+    padding-left:6em;
+}
+
+span.signature-position {
+    font-size: 1.5rem;
+
+}
+
 
 
 
