@@ -1,12 +1,15 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --gold-color: #D2B429;
 }
 
 body {
     background-color:black;
     margin: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: white;
@@ -30,10 +33,10 @@ p.text-white {
 
 button {
     background-color: #fff;
-    color: #D2B429;
-    font-family: 'Cormorant Upright';
+    color: var(--gold-color);
+    font-family: 'Cormorant Upright','Georgia',serif;
     text-align: center;
-    border: solid 1px #D2B429;
+    border: solid 1px var(--gold-color);
     font-size: 21px;
     
 }
@@ -56,7 +59,7 @@ h3 {
     color: #000;
     font-size: 30px;
     line-height: 1.8em;
-    font-family: 'Cormorant Upright';
+    font-family: 'Cormorant Upright','Georgia',serif;
     text-align: center;
 }
 
@@ -128,7 +131,7 @@ nav#menu ul, li.menu-item {
 }
 
 .phone-menu {
-    color: #D2B429;
+    color: var(--gold-color);
     font-size: 1rem;
     margin-bottom: 0px;
     padding-top: 40px;
@@ -235,7 +238,7 @@ header#header {
 }
 
 #header-overlay h2 {
-    font-family: 'Cormorant Upright';
+    font-family: 'Cormorant Upright','Georgia',serif;
     text-align: center;
     font-size: 4.5rem;
     margin-top: 30%;
@@ -290,7 +293,7 @@ section#about {
 
 
 h1#about {
-    font-family: 'Cormorant Upright';
+    font-family: 'Cormorant Upright','Georgia',serif;
     text-align: left;
     font-size: 4.5rem;
     color: #fff;
@@ -302,7 +305,7 @@ h1#about {
 }
 
 p.signature {
-    font-family: 'Cormorant Upright';
+    font-family: 'Cormorant Upright','Georgia',serif;
     text-align: center;
     font-size: 2.2rem;
     color: #fff;
