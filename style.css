@@ -30,6 +30,8 @@ body {
 p.text-white {
     color: #fff;
     line-height: 1.8em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 button {
@@ -56,12 +58,21 @@ p.button-text {
     margin-right: auto;
 }
 
-h3 {
+h3.black {
     color: #000;
     font-size: 2.5rem;
     font-family: 'Cormorant Upright','Georgia',serif;
     text-align: center;
 }
+
+h3.white {
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Cormorant Upright','Georgia',serif;
+    text-align: center;
+}
+
+
 
 
 /*---Nav---*/
@@ -217,6 +228,7 @@ header#header {
     border-width: 0px 20px;
 }
 
+
 #header-overlay {
     background-color: rgba(0,0,0,0.72);
     position:absolute;
@@ -224,6 +236,7 @@ header#header {
     height: 100%;
     
 }
+
 
 #main-header-section {
     width:60%;
@@ -297,7 +310,7 @@ h1#about {
     text-align: left;
     font-size: 4.5rem;
     color: #fff;
-    padding-bottom: 2rem;
+
 }
 
 #text-about {
@@ -310,7 +323,7 @@ p.signature {
     text-align: center;
     font-size: 2.2rem;
     color: #fff;
-    padding-top: 2rem;
+   
     padding-left: 30rem;
 }
 
@@ -373,6 +386,29 @@ li.service-list-item:nth-child(3n+2) {
 .text-services {
     text-align: center;
 }
+
+
+/*---Grave-Care Section---*/
+
+section#grave-care {
+    background-image: url(img/opieka-nad-grobami.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+
+.grave-care-overlay {
+    background-color: rgba(0,0,0,0.72);
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 15rem 5rem 15rem;
+    text-align: center;
+}
+
 
 
 
