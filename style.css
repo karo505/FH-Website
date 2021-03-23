@@ -1,392 +1,351 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    --gold-color: #D2B429;
-    
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --gold-color: #d2b429;
+  --header-font: "Cormorant Upright", "Georgia", serif;
 }
 
 body {
-    background-color:black;
-    margin: 0;
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: white;
-      
-
+  background-color: black;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 .text-black {
-    color: #000;
-    line-height: 1.8em;
+  color: #000;
+  line-height: 2.1rem;
 }
 
 p.text-white {
-    color: #fff;
-    line-height: 1.8em;
+  color: #fff;
+  line-height: 2.1rem;
+  padding: 2rem 0;
 }
 
 button {
-    background-color: #fff;
-    color: var(--gold-color);
-    font-family: 'Cormorant Upright','Georgia',serif;
-    text-align: center;
-    border: solid 1px var(--gold-color);
-    font-size: 2rem;
-    
+  background-color: #fff;
+  color: var(--gold-color);
+  font-family: var(--header-font);
+  text-align: center;
+  border: solid 1px var(--gold-color);
+  font-size: 2rem;
 }
 
 p.button-text {
-    padding: 12px;
+  padding: 1rem;
 }
-
 
 .section-row {
-    max-width: 1140px;
-    min-height: 130px;
-        display: flex;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1140px;
+  min-height: 130px;
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h3 {
-    color: #000;
-    font-size: 2.5rem;
-    font-family: 'Cormorant Upright','Georgia',serif;
-    text-align: center;
+h3.black {
+  color: #000;
+  font-size: 2.5rem;
+  font-family: var(--header-font);
+  text-align: center;
 }
 
+h3.white {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: var(--header-font);
+  text-align: center;
+}
 
 /*---Nav---*/
 
 nav#menu {
-    max-width: 1140px;
-    min-height: 130px;
-    position: relative;
-    z-index: 999;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    
-    
+  max-width: 1140px;
+  min-height: 130px;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #menu-row {
-    width: 100%;
-    display: flex;
-    padding-bottom: 30px;
+  width: 100%;
+  display: flex;
 }
 
 #nav-left {
-    width: 40%;
-    align-content: center;
-    align-items: center;
-    margin-right: 20px;
-    padding-top: 55px;
-
+  width: 40%;
+  align-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  padding-top: 3.2rem;
 }
 
-
 #nav-right {
-    width: 20%;
-    align-content: center;
-    align-items: center;
-    margin-left: 20px;
-    padding-top: 55px;
-    text-align: center;
+  width: 20%;
+  align-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  padding-top: 3.2rem;
+  text-align: center;
 }
 
 #nav-center {
-    width: 20%;
-    align-content: center;
-    align-items: center;
-  
+  width: 20%;
+  align-content: center;
+  align-items: center;
 }
 
 #phone {
-    width: 20%;
-    align-content: center;
-    align-items: center;
-    text-align: center;
+  width: 20%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
-
 
 nav#menu #menu-row ul {
-    padding: 0;
+  padding: 0;
 }
 
-
-nav#menu ul, li.menu-item {
-    list-style: none;
-    display: inline;
-    
- 
+nav#menu ul,
+li.menu-item {
+  list-style: none;
+  display: inline;
 }
 
 .phone-menu {
-    color: var(--gold-color);
-    font-size: 1rem;
-    margin-bottom: 0px;
-    padding-top: 60px;
-
-
-
+  color: var(--gold-color);
+  font-size: 1rem;
+  margin-bottom: 0px;
+  padding-top: 3.4rem;
 }
 
 a.phone-menu {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 a.link-menu {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    padding: 55px 20px 55px 20px;
-    position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 3.7rem 1.3rem;
+  position: relative;
 }
-
 
 /*---Menu Hover Effects---*/
 
 a.link-menu::after {
-    content: "";
-    bottom: 3px;
-    height: 3px;
-    width: 100%;
-    z-index: 2;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    opacity: 0;
- 
+  content: "";
+  bottom: 0.2rem;
+  height: 0.2rem;
+  width: 100%;
+  z-index: 2;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  opacity: 0;
 }
 
 a.link-menu:hover::after {
-    opacity: 1; 
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
-    
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
 }
-
 
 /*---LOGO Section---*/
 
-
 section#logo {
-    height: 0px;
+  height: 0px;
 }
 
 #row-logo {
-    max-width: 230px;
-    z-index: 2;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+  max-width: 15.3rem;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
-
 
 img#retina-logo {
-    width: 250px;
-    margin: -70px 0px 0px 0px;
-    padding-bottom: 10px;
-
+  width: 15.3rem;
+  margin-top: -4.5rem;
+  padding-bottom: 1rem;
 }
-
 
 /*---Header---*/
 
 header#header {
-    background-image: url('img/zaklad-pogrzebowy-paslek.jpg');
-    background-position: center;
-    height: 100vh;
-    position: relative;
-    background-size: cover;
-    border-style: solid;
-    border-color: #000;
-    border-width: 0px 20px;
+  background-image: url("img/zaklad-pogrzebowy-paslek.jpg");
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0px 2rem 2rem 2rem;
 }
 
 #header-overlay {
-    background-color: rgba(0,0,0,0.72);
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    
+  background-color: rgba(0, 0, 0, 0.72);
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #main-header-section {
-    width:60%;
-    margin-left:auto;
-    margin-right:auto;
-    position: relative;   
-    /*--display: block;
-    margin-bottom: 20px;--*/
-    padding: 10px;
-    height: 100%;
-
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%;
 }
 
 #header-overlay h2 {
-    font-family: 'Cormorant Upright','Georgia',serif;
-    text-align: center;
-    font-size: 4.5rem;
-    margin-top: 30%;
+  font-family: var(--header-font);
+  text-align: center;
+  font-size: 4.5rem;
+  margin-top: 30%;
 }
 
 #header-text {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 #header-image {
-    text-align: center;
+  text-align: center;
 }
-
-
-
 
 /*---Section Documents---*/
 
 section#documents {
-    background-color: #fff;
-    display: flex;
-    padding: 60px 0px;
-
+  background-color: #fff;
+  display: flex;
+  padding: 3rem 0;
 }
 
-
 .section-white {
-    width: 100%;
+  width: 100%;
 }
 
 .section-right-align {
-    position: absolute;
-    right:0;
-    padding: 1em 0 2em 0;
+  position: absolute;
+  right: 0;
+  padding: 1rem 0;
 }
-
-
-
 
 /*---Section About---*/
 
 section#about {
-    background-color: #000;
-    display: flex;
-    padding: 60px 0px;
-    background-image: url('img/roza.jpg');
-    background-position: right;
-    background-repeat: no-repeat;
-
+  background-color: #000;
+  display: flex;
+  padding: 3rem 0;
+  background-image: url("img/roza.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
-
 h1#about {
-    font-family: 'Cormorant Upright','Georgia',serif;
-    text-align: left;
-    font-size: 4.5rem;
-    color: #fff;
-    padding-bottom: 2rem;
+  font-family: var(--header-font);
+  text-align: left;
+  font-size: 4.5rem;
+  color: #fff;
 }
 
 #text-about {
-    width: 60%;
-    
+  width: 60%;
 }
 
 p.signature {
-    font-family: 'Cormorant Upright','Georgia',serif;
-    text-align: center;
-    font-size: 2.2rem;
-    color: #fff;
-    padding-top: 2rem;
-    padding-left: 30rem;
+  font-family: var(--header-font);
+  text-align: center;
+  font-size: 2.2rem;
+  color: #fff;
+
+  padding-left: 30rem;
 }
 
 span.signature-position {
-    font-size: 1.5rem;
-
+  font-size: 1.5rem;
 }
-
 
 /*---Section Services---*/
 
 section#services {
-    background-color: #fff;
-    display:flex;
-    padding: 60px 0px;
+  background-color: #fff;
+  display: flex;
+  padding: 3rem 0;
 }
 
 #services-text {
-    display: block;
-    margin-bottom: 2em;
+  display: block;
+  margin: 4rem 0;
 }
 
 ul.service-list {
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
 }
 
 li.service-list-item {
-    width: calc(33% - 2rem);
-    margin-bottom: 2rem;
-    position: relative;
-    padding: 2rem;
+  width: calc(33% - 2rem);
+  margin-bottom: 4rem;
+  position: relative;
 }
 
 .service-list-image img {
-    height: 230px;
-    width: 360px;
-    box-shadow: 0 0 10px 4px rgb(0 0 0 / 10%);
-    object-fit: cover;
+  height: 13.3rem;
+  width: 22rem;
+  box-shadow: 0 0 0.5rem 0.25rem rgb(0 0 0 / 10%);
+  object-fit: cover;
 }
-
 
 .section-row-services {
-    max-width: 1140px;
-    min-height: 130px;
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-li.service-list-item:nth-child(3n+2) {
-    margin: 0 40px;
+  max-width: 1140px;
+  min-height: 130px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-services {
-    text-align: center;
+  text-align: center;
 }
 
+/*---Grave-Care Section---*/
 
+section#grave-care {
+  background-image: url(img/opieka-nad-grobami.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.grave-care-overlay {
+  background-color: rgba(0, 0, 0, 0.72);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 15rem;
+  text-align: center;
+}
