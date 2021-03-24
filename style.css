@@ -343,9 +343,159 @@ section#grave-care {
 
 .grave-care-overlay {
   background-color: rgba(0, 0, 0, 0.72);
-  position: absolute;
   width: 100%;
   height: 100%;
   padding: 5rem 15rem;
   text-align: center;
+}
+
+/*---Section Documents---*/
+
+section#speaker {
+  background-color: #fff;
+  display: flex;
+  padding: 60px 0px;
+}
+
+/*---Section Contact---*/
+
+section#contact {
+  padding: 60px 0px;
+}
+
+h3.contact-header {
+  text-align: left;
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom:4rem;
+  font-family: var(--header-font);
+}
+
+#contact-container {
+  max-width: 1140px;
+    min-height: 130px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#contact-two-columns {
+  display: flex;
+}
+
+#contact-left {
+  width:35%;
+  padding-right: 10%;
+}
+
+#contact-right {
+  width:55%;
+}
+
+h4.contact {
+ 
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 2rem;
+font-weight:600;
+margin-bottom: 1.5rem;
+}
+
+p.contact-text {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+p.contact-text-small {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+
+h4.contact-gold {
+ 
+  color: var(--gold-color);
+  font-size: 1.3rem;
+  line-height: 3rem;
+font-weight:600;
+margin-bottom: 1.5rem;
+}
+
+a.contact-text-gold {
+color: var(--gold-color);
+font-size: 2rem;
+line-height: 2rem;
+margin-bottom: 2rem;
+}
+
+#map {
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+/* ---Footer-links--- */
+
+#footer-links {
+width: 1140px;
+margin: auto;
+display:flex;
+
+}
+
+.three-columns {
+  width:30%;
+  float: left;
+  text-align: center;
+}
+
+.three-columns:nth-child(3) {
+  padding: 0 5%;
+}
+
+
+p.footer-links {
+  color: #c1c1c1;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+p.footer-links a {
+  color: #c1c1c1;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+.footer-link-image {
+  width: 15.3rem;
+}
+
+
+/*---Footer---*/
+
+footer#footer {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+p.footer {
+  color: #696969;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+hr {
+  width: 1140px;
+  margin: auto;
+  color: #fff;
+  margin-bottom: 4rem;
 }
