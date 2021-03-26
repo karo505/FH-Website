@@ -48,12 +48,11 @@ p.button-text {
 }
 
 .section-row {
-    max-width: 1140px;
+    max-width: 71rem;
     min-height: 130px;
     display: flex;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 h3.black {
@@ -351,12 +350,12 @@ section#grave-care {
     text-align: center;
 }
 
-/*---Section Documents---*/
+/*---Section Speaker---*/
 
 section#speaker {
     background-color: #fff;
     display: flex;
-    padding: 60px 0px;
+    padding: 3rem 0;
 }
 
 /*---Section Contact---*/
@@ -374,12 +373,11 @@ h3.contact__title {
 }
 
 .contact__container {
-    max-width: 1140px;
+    max-width: 71rem;
     min-height: 130px;
     display: block;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .contact__cols {
@@ -437,7 +435,7 @@ a.contact-text-gold {
 }
 
 hr {
-    width: 1140px;
+    width: 71rem;
     margin: auto;
     color: #fff;
     margin-bottom: 4rem;
@@ -446,7 +444,7 @@ hr {
 /* ---Footer-links--- */
 
 #footer-links {
-    width: 1140px;
+    width: 71rem;
     margin: auto;
     display: flex;
 }
@@ -481,7 +479,7 @@ p.footer-links a {
 
 footer {
     background-color: #fff;
-    padding: 20px 0;
+    padding: 1rem 0;
 }
 
 p.footer {
