@@ -13,70 +13,65 @@
 </head>
 
 <body>
-  <nav id="menu">
-    <div id="menu-row">
-      <div class="nav" id="nav-left">
+  <nav class="menu">
+    <div class="menu__row">
+      <div class="nav nav--left">
         <ul>
           <li class="menu-item">
-            <a class="link-menu text-menu" href="services">USŁUGI POGRZEBOWE</a>
+            <a class="menu-item__link" href="#services">USŁUGI POGRZEBOWE</a>
           </li>
           <li class="menu-item">
-            <a class="link-menu text-menu" href="documents">DOKUMENTY</a>
+            <a class="menu-item__link" href="documents">DOKUMENTY</a>
           </li>
         </ul>
       </div>
-      <div class="nav" id="nav-center">
+      <div class="nav nav--center">
         <a href="/"></a>
       </div>
-      <div class="nav" id="nav-right">
+      <div class="nav nav--right">
         <ul>
           <li class="menu-item">
-            <a class="link-menu text-menu" href="contact">KONTAKT</a>
+            <a class="menu-item__link" href="#contact">KONTAKT</a>
           </li>
         </ul>
       </div>
-      <div id="phone">
-        <p class="phone-menu">TELEFON CAŁODOBOWY</p>
-        <a href="tel:+48603670456" class="phone-menu">+48 603 670 456</a>
+      <div class="menu__phone">
+        <p class="menu__phone__title">TELEFON CAŁODOBOWY</p>
+        <a href="tel:+48603670456" class="menu__phone__number">+48 603 670 456</a>
       </div>
     </div>
   </nav>
-  <section id="logo">
-    <div id="row-logo">
-      <div id="logo-container">
-        <a href="/">
-          <img id="retina-logo" src="img/logo.png" alt="logo zakład pogrzebowy pasłęk"
-            title="Zakład Pogrzebowy Pasłęk" />
-        </a>
-      </div>
+  <section class="logo">
+    <div class="logo__row">
+      <a href="/">
+        <img src="img/logo.png" alt="logo zakład pogrzebowy pasłęk" title="Zakład Pogrzebowy Pasłęk" />
+      </a>
     </div>
   </section>
-  <header id="header">
-    <div id="header-overlay">
-      <div id="main-header-section">
-        <div id="header-text">
-          <h2 id="main-header-text">
-            Zapewniamy godne pożegnaie dla tych, którzy odeszli
-          </h2>
-        </div>
-        <div id="header-image">
+  <header class="header">
+    <div class="header__overlay">
+      <div class="main-header">
+        <h2 class="main-header__title">
+          Zapewniamy godne pożegnaie dla tych, którzy odeszli
+        </h2>
+        <div class="main-header__image">
           <img src="img/goldrose.png" />
         </div>
       </div>
     </div>
   </header>
-  <div class="clear"></div>
-  <section id="documents">
+
+  <section class="documents">
     <div class="section-row">
-      <div class="section-white">
+      <div class="col-2">
         <p class="text-black">
           Na naszej stronie znajdą Państwo wzory dokumentów do wypełnienia,
           niezbędnych do zlecenia nam czynności związanych z przygotowaniem
           pogrzebu:
         </p>
       </div>
-      <div class="section-white">
-        <div class="section-right-align">
+      <div class="col-2">
+        <div class="col-2__right">
           <button>
             <p class="button-text">DOKUMENTY DO POBRANIA</p>
           </button>
@@ -84,75 +79,73 @@
       </div>
     </div>
   </section>
-  <div class="clear"></div>
+
   <section id="about">
     <div class="section-row">
-      <div id="text-about">
-        <h1 id="about">Usługi pogrzebowe w&nbsp;Pasłęku</h1>
+      <div class="col-66">
+        <h1>Usługi pogrzebowe w&nbsp;Pasłęku</h1>
         <p class="text-white">
           <strong>Od blisko 30&nbsp;lat towarzyszymy Państwu w&nbsp;trudnych
             chwilach</strong>, kiedy odchodzi ktoś bliski. Mogą Państwo liczyć na naszą pomoc
           i&nbsp;wsparcie na każdym etapie przygotowania pogrzebu. Dokładamy
           wszelkich starań, aby każdy pochówek odbywał się z&nbsp;<strong>godnością i&nbsp;należytym
-            szacunkiem</strong>.<br />
-          Przez lata istnienia ugruntowaliśmy naszą pozycję na pasłęckim rynku
+            szacunkiem</strong>.</p>
+        <p class="text-white">Przez lata istnienia ugruntowaliśmy naszą pozycję na pasłęckim rynku
           usług pogrzebowych. Dziękujemy Państwu za zaufanie, jakie okazujecie
           powierzając nam organizację pochówku swoich bliskich.
         </p>
         <p class="signature">
           Janina Cieśla
           <br />
-          <span class="signature-position">Właściciel</span>
+          <span class="signature__position">Właściciel</span>
         </p>
       </div>
     </div>
   </section>
-  <div class="clear"></div>
+
   <section id="services">
-    <div class="section-row-services">
-      <div id="services-text">
+    <div class="services__row">
+      <div class="services__title">
         <h3 class="black">Świadczymy następujące usługi pogrzebowe:</h3>
       </div>
-      <div id="services-photos">
-        <ul class="service-list">
-          <li class="service-list-item">
-            <div class="service-list-image">
-              <img src="img/karawan.jpg" alt="karawan pasłęk" />
-            </div>
-            <h4 class="text-black text-services">TRANSPORT</h4>
-          </li>
-          <li class="service-list-item">
-            <div class="service-list-image">
-              <img src="img/trumny.jpg" alt="trumny pasłęk" />
-            </div>
-            <h4 class="text-black text-services">TRUMNY, URNY</h4>
-          </li>
-          <li class="service-list-item">
-            <div class="service-list-image">
-              <img src="img/organizacja-pogrzebu.jpg" alt="organizacja pogrzebu pasłęk" />
-            </div>
-            <h4 class="text-black text-services">ORGANIZACJA POGRZEBU</h4>
-          </li>
-          <li class="service-list-item">
-            <div class="service-list-image">
-              <img src="img/tabliczki.jpg" alt="klepsydry pasłęk" />
-            </div>
-            <h4 class="text-black text-services">KLEPSYDRY, TABLICZKI</h4>
-          </li>
-          <li class="service-list-item">
-            <div class="service-list-image">
-              <img src="img/kwiaty-pogrzebowe.jpg" alt="kwiaty pogrzebowe pasłęk" />
-            </div>
-            <h4 class="text-black text-services">WIEŃCE, WIĄZANKI</h4>
-          </li>
-          <li class="service-list-item">
-            <div class="service-list-image">
-              <img src="img/zaslek-pogrzebowy.jpg" alt="zasiłek pogrzebowy pasłęk" />
-            </div>
-            <h4 class="text-black text-services">ZASIŁEK POGRZEBOWY</h4>
-          </li>
-        </ul>
-      </div>
+      <ul class="service-list">
+        <li class="service-list-item">
+          <div class="service-list-image">
+            <img src="img/karawan.jpg" alt="karawan pasłęk" />
+          </div>
+          <h4 class="text-black text-services">TRANSPORT</h4>
+        </li>
+        <li class="service-list-item">
+          <div class="service-list-image">
+            <img src="img/trumny.jpg" alt="trumny pasłęk" />
+          </div>
+          <h4 class="text-black text-services">TRUMNY, URNY</h4>
+        </li>
+        <li class="service-list-item">
+          <div class="service-list-image">
+            <img src="img/organizacja-pogrzebu.jpg" alt="organizacja pogrzebu pasłęk" />
+          </div>
+          <h4 class="text-black text-services">ORGANIZACJA POGRZEBU</h4>
+        </li>
+        <li class="service-list-item">
+          <div class="service-list-image">
+            <img src="img/tabliczki.jpg" alt="klepsydry pasłęk" />
+          </div>
+          <h4 class="text-black text-services">KLEPSYDRY, TABLICZKI</h4>
+        </li>
+        <li class="service-list-item">
+          <div class="service-list-image">
+            <img src="img/kwiaty-pogrzebowe.jpg" alt="kwiaty pogrzebowe pasłęk" />
+          </div>
+          <h4 class="text-black text-services">WIEŃCE, WIĄZANKI</h4>
+        </li>
+        <li class="service-list-item">
+          <div class="service-list-image">
+            <img src="img/zaslek-pogrzebowy.jpg" alt="zasiłek pogrzebowy pasłęk" />
+          </div>
+          <h4 class="text-black text-services">ZASIŁEK POGRZEBOWY</h4>
+        </li>
+      </ul>
     </div>
   </section>
   <section id="grave-care">
@@ -176,15 +169,15 @@
   </section>
   <section id="speaker">
     <div class="section-row">
-      <div class="section-white">
+      <div class="col-2">
         <p class="text-black">
           Współpracujemy z&nbsp;doświadczonym Mówcą Pogrzebowym, specjalizującym się w&nbsp;prowadzeniu <strong>modlitw
             w&nbsp;kaplicy pogrzebowej</strong>
           oraz organizacji <strong>świeckich ceremonii pogrzebowych</strong>.
         </p>
       </div>
-      <div class="section-white">
-        <div class="section-right-align">
+      <div class="col-2">
+        <div class="col-2__right">
           <button>
             <p class="button-text">MÓWCA POGRZEBOWY</p>
           </button>
@@ -193,10 +186,10 @@
     </div>
   </section>
   <section id="contact">
-    <div id="contact-container">
-      <h3 class="contact-header">Kontakt</h3>
-      <div id="contact-two-columns">
-        <div id="contact-left">
+    <div class="contact__container">
+      <h3 class="contact__title">Kontakt</h3>
+      <div class="contact__cols">
+        <div class="col-35">
           <h4 class="contact">ZAKŁAD POGRZEBOWY<br /> Janina Cieśla</h4>
           <p class="contact-text">ul. Mickiewicza 35<br />
             14-400 PASŁĘK</p>
@@ -206,7 +199,7 @@
           <h4 class="contact-gold">TELEFON CAŁODOBOWY</p>
             <a href="tel:+48603670456" class="contact-text-gold">+48 603 670 456</a>
         </div>
-        <div id="contact-right">
+        <div class="col-55">
           <div id="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2341.535402466137!2d19.656550315865623!3d54.06424798013572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e2b03da41083ff%3A0x728dee3578fb98ff!2sZAK%C5%81AD%20POGRZEBOWY%20Janina%20Cie%C5%9Bla!5e0!3m2!1spl!2spl!4v1616177985803!5m2!1spl!2spl"
@@ -236,15 +229,14 @@
         <p class="footer-links">ZAKŁAD POGRZEBOWY
           REKOMENDOWANY PRZEZ:
         </p>
-        <a href="https://funeralny.pl" alt="portal brany pogrzebowej"><img class="footer-link-image"
+        <a href="https://funeralny.pl" alt="portal brany pogrzebowej"><img class="footer-link__image"
             src="img/funeralny-logo white.png" alt="funeralny.pl"></a>
       </div>
     </div>
 
   </section>
   <div class="clear"></div>
-  <footer id="footer">
-    <div id="footer-text"></div>
+  <footer>
     <p class="footer">© 2021 ZAKŁAD POGRZEBOWY Pasłęk - Janina Cieśla</p>
     </div>
   </footer>

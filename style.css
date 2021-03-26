@@ -27,7 +27,7 @@ body {
 p.text-white {
     color: #fff;
     line-height: 2.1rem;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
 }
 
 button {
@@ -64,11 +64,12 @@ h3.white {
     font-size: 2.5rem;
     font-family: var(--header-font);
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 /*---Nav---*/
 
-nav#menu {
+nav.menu {
     max-width: 1140px;
     min-height: 130px;
     position: relative;
@@ -78,12 +79,12 @@ nav#menu {
     margin-left: auto;
 }
 
-#menu-row {
+.menu__row {
     width: 100%;
     display: flex;
 }
 
-#nav-left {
+.nav--left {
     width: 40%;
     align-content: center;
     align-items: center;
@@ -91,7 +92,7 @@ nav#menu {
     padding-top: 3.2rem;
 }
 
-#nav-right {
+.nav--right {
     width: 20%;
     align-content: center;
     align-items: center;
@@ -100,20 +101,20 @@ nav#menu {
     text-align: center;
 }
 
-#nav-center {
+.nav--center {
     width: 20%;
     align-content: center;
     align-items: center;
 }
 
-#phone {
+.menu__phone {
     width: 20%;
     align-content: center;
     align-items: center;
     text-align: center;
 }
 
-nav#menu #menu-row ul {
+nav#menu .menu__row ul {
     padding: 0;
 }
 
@@ -123,20 +124,7 @@ li.menu-item {
     display: inline;
 }
 
-.phone-menu {
-    color: var(--gold-color);
-    font-size: 1rem;
-    margin-bottom: 0px;
-    padding-top: 3.4rem;
-}
-
-a.phone-menu {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-a.link-menu {
+a.menu-item__link {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
@@ -144,9 +132,23 @@ a.link-menu {
     position: relative;
 }
 
+.menu__phone__title {
+    color: var(--gold-color);
+    font-size: 1rem;
+    margin-bottom: 0px;
+    padding-top: 3.4rem;
+}
+
+.menu__phone__number {
+    color: var(--gold-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 /*---Menu Hover Effects---*/
 
-a.link-menu::after {
+a.menu-item__link::after {
     content: '';
     bottom: 0.2rem;
     height: 0.2rem;
@@ -158,7 +160,7 @@ a.link-menu::after {
     opacity: 0;
 }
 
-a.link-menu:hover::after {
+a.menu-item__link:hover::after {
     opacity: 1;
     transition-property: all;
     transition-duration: 0.3s;
@@ -168,11 +170,11 @@ a.link-menu:hover::after {
 
 /*---LOGO Section---*/
 
-section#logo {
+section.logo {
     height: 0px;
 }
 
-#row-logo {
+.logo__row {
     max-width: 15.3rem;
     z-index: 2;
     margin-left: auto;
@@ -180,7 +182,7 @@ section#logo {
     position: relative;
 }
 
-img#retina-logo {
+.logo__row img {
     width: 15.3rem;
     margin-top: -4.5rem;
     padding-bottom: 1rem;
@@ -188,7 +190,7 @@ img#retina-logo {
 
 /*---Header---*/
 
-header#header {
+header.header {
     background-image: url('img/zaklad-pogrzebowy-paslek-slider.jpg');
     background-position: center;
     height: 100vh;
@@ -199,14 +201,14 @@ header#header {
     border-width: 0px 2rem 2rem 2rem;
 }
 
-#header-overlay {
+.header__overlay {
     background-color: rgba(0, 0, 0, 0.72);
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-#main-header-section {
+.main-header {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -214,35 +216,30 @@ header#header {
     height: 100%;
 }
 
-#header-overlay h2 {
+.main-header__title {
     font-family: var(--header-font);
     text-align: center;
     font-size: 4.5rem;
     margin-top: 30%;
 }
 
-#header-text {
-    position: relative;
-    text-align: center;
-}
-
-#header-image {
+.main-header__image {
     text-align: center;
 }
 
 /*---Section Documents---*/
 
-section#documents {
+section.documents {
     background-color: #fff;
     display: flex;
     padding: 3rem 0;
 }
 
-.section-white {
+.col-2 {
     width: 100%;
 }
 
-.section-right-align {
+.col-2__right {
     position: absolute;
     right: 0;
     padding: 1rem 0;
@@ -259,15 +256,16 @@ section#about {
     background-repeat: no-repeat;
 }
 
-h1#about {
+h1 {
     font-family: var(--header-font);
     text-align: left;
     font-size: 4.5rem;
     color: #fff;
+    padding-bottom: 2rem;
 }
 
-#text-about {
-    width: 60%;
+.col-66 {
+    width: 66%;
 }
 
 p.signature {
@@ -279,7 +277,7 @@ p.signature {
     padding-left: 30rem;
 }
 
-span.signature-position {
+span.signature__position {
     font-size: 1.5rem;
 }
 
@@ -291,7 +289,7 @@ section#services {
     padding: 3rem 0;
 }
 
-#services-text {
+.services__title {
     display: block;
     margin: 4rem 0;
 }
@@ -317,7 +315,7 @@ li.service-list-item {
     object-fit: cover;
 }
 
-.section-row-services {
+.services__row {
     max-width: 1140px;
     min-height: 130px;
     display: block;
@@ -363,7 +361,7 @@ section#contact {
     padding: 60px 0px;
 }
 
-h3.contact-header {
+h3.contact__title {
     text-align: left;
     color: #fff;
     font-size: 3.5rem;
@@ -371,7 +369,7 @@ h3.contact-header {
     font-family: var(--header-font);
 }
 
-#contact-container {
+.contact__container {
     max-width: 1140px;
     min-height: 130px;
     display: block;
@@ -380,16 +378,16 @@ h3.contact-header {
     margin-right: auto;
 }
 
-#contact-two-columns {
+.contact__cols {
     display: flex;
 }
 
-#contact-left {
+.col-35 {
     width: 35%;
     padding-right: 10%;
 }
 
-#contact-right {
+.col-55 {
     width: 55%;
 }
 
@@ -434,6 +432,13 @@ a.contact-text-gold {
     margin-bottom: 2rem;
 }
 
+hr {
+    width: 1140px;
+    margin: auto;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
 /* ---Footer-links--- */
 
 #footer-links {
@@ -464,13 +469,13 @@ p.footer-links a {
     line-height: 1.7rem;
 }
 
-.footer-link-image {
+.footer-link__image {
     width: 15.3rem;
 }
 
 /*---Footer---*/
 
-footer#footer {
+footer {
     background-color: #fff;
     padding: 20px 0;
 }
@@ -479,11 +484,4 @@ p.footer {
     color: #696969;
     font-size: 0.8rem;
     text-align: center;
-}
-
-hr {
-    width: 1140px;
-    margin: auto;
-    color: #fff;
-    margin-bottom: 4rem;
 }
