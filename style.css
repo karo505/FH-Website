@@ -30,6 +30,10 @@ p.text-white {
     padding-bottom: 2rem;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 button {
     background-color: #fff;
     color: var(--gold-color);
