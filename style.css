@@ -524,3 +524,108 @@ p.footer {
 		padding-right: 0.5rem;
 	}
 }
+
+/* Small screens, laptops */
+
+@media all and (max-width: 1024px) {
+	/* 
+  *
+  *
+  --- ADD Hamburger menu here ---
+  *
+  *
+  */
+
+	.nav {
+		display: none;
+	}
+
+	.menu__phone {
+		width: 100%;
+		display: flex;
+		width: auto;
+		display: flex;
+		position: relative;
+		margin: auto;
+	}
+
+	.menu__row {
+		margin: auto;
+		margin-bottom: 6rem;
+		background-color: #fff;
+		padding-bottom: 2rem;
+	}
+
+	a.menu-item__link,
+	.menu__phone__number {
+		font-size: 1.3rem;
+		padding-top: 2.2rem;
+	}
+
+	.menu__phone__title {
+		padding: 2.2rem 1.2rem 0 0;
+	}
+
+	.section-row,
+	.services__row {
+		max-width: 40rem;
+	}
+
+	.col-2__right {
+		position: relative;
+		padding: 2rem;
+	}
+
+	p.signature {
+		padding-left: 20rem;
+	}
+
+	.service-list-image img {
+		height: 8rem;
+		width: 11rem;
+	}
+
+	.grave-care-overlay {
+		padding: 5rem;
+	}
+
+	h4.contact-gold {
+		line-height: 2rem;
+	}
+
+	a.contact-text-gold {
+		font-size: 1.4rem;
+	}
+
+	#footer-links {
+		width: 45rem;
+		display: block;
+	}
+
+	.three-columns {
+		width: 100%;
+		float: none;
+		padding-bottom: 4rem;
+	}
+
+	.three-columns::after {
+		content: "";
+		height: 2px;
+		width: 50%;
+		z-index: 2;
+		background-color: #1c1c1c;
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: 2rem auto 0 auto;
+	}
+
+	.three-columns:nth-child(3)::after {
+		display: none;
+	}
+
+	hr {
+		width: 45rem;
+	}
+}
