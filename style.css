@@ -629,3 +629,17 @@ p.footer {
 		width: 45rem;
 	}
 }
+
+/* iPads, Tablets */
+
+@media all and (max-width: 768px) {
+	.menu__phone__title,
+	.menu__phone__number {
+		font-size: 2rem;
+	}
+}
+
+/* Mobile devices */
+
+@media all and (max-width: 480px) {
+}
