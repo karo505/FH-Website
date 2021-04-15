@@ -115,6 +115,7 @@ nav.menu {
 	align-content: center;
 	align-items: center;
 	text-align: center;
+	padding-top: 2rem;
 }
 
 nav#menu .menu__row ul {
@@ -139,7 +140,7 @@ a.menu-item__link {
 	color: var(--gold-color);
 	font-size: 1rem;
 	margin-bottom: 0px;
-	padding-top: 3.4rem;
+	padding-top: 1.5rem;
 }
 
 .menu__phone__number {
@@ -147,6 +148,13 @@ a.menu-item__link {
 	text-decoration: none;
 	font-size: 1rem;
 	font-weight: 600;
+}
+
+/* ---Mobile Nav--- */
+
+.ham,
+.menu-mobile {
+	display: none;
 }
 
 /*---Menu Hover Effects---*/
@@ -528,13 +536,59 @@ p.footer {
 /* Small screens, laptops */
 
 @media all and (max-width: 1024px) {
-	/* 
-  *
-  *
-  --- ADD Hamburger menu here ---
-  *
-  *
-  */
+	/* Hamburger menu   */
+	.ham {
+		position: fixed;
+		z-index: 100;
+		top: 1rem;
+		right: 1rem;
+		width: 3rem;
+		height: 3rem;
+		border: black solid 1px;
+		background: white;
+		cursor: pointer;
+		display: block;
+	}
+
+	.xIcon {
+		display: none;
+	}
+
+	.menu-mobile {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		color: white;
+		transform: translateY(-100%);
+		transition: transform 0.2s;
+		list-style: none;
+		padding: 4rem;
+		display: block;
+	}
+
+	.showMenu {
+		transform: translateY(0);
+	}
+
+	li {
+		padding: 1rem 0;
+	}
+
+	.menuLink {
+		display: inline;
+		font-size: 2rem;
+		color: white;
+		text-decoration: none;
+	}
+
+	.menuLink:hover {
+		text-decoration: underline;
+	}
 
 	.nav {
 		display: none;
@@ -542,11 +596,13 @@ p.footer {
 
 	.menu__phone {
 		width: 100%;
-		display: flex;
+		display: block;
 		width: auto;
-		display: flex;
+		display: block;
 		position: relative;
 		margin: auto;
+		text-align: center;
+		padding: 0 4rem;
 	}
 
 	.menu__row {
@@ -559,11 +615,7 @@ p.footer {
 	a.menu-item__link,
 	.menu__phone__number {
 		font-size: 1.3rem;
-		padding-top: 2.2rem;
-	}
-
-	.menu__phone__title {
-		padding: 2.2rem 1.2rem 0 0;
+		padding-top: 1rem;
 	}
 
 	.section-row,
@@ -641,7 +693,6 @@ p.footer {
 	.menu__phone__title,
 	.menu__phone__number {
 		font-size: 1rem;
-		width: 50%;
 	}
 
 	.main-header {
