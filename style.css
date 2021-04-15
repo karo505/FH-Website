@@ -139,6 +139,7 @@ a.menu-item__link {
 .menu__phone__title {
 	color: var(--gold-color);
 	font-style: italic;
+	font-style: italic;
 	font-size: 1rem;
 	margin-bottom: 0px;
 	padding-top: 1.5rem;
@@ -262,7 +263,7 @@ section.documents {
 section#about {
 	background-color: #000;
 	display: flex;
-	padding: 3rem 0;
+	padding: 5rem 0;
 	background-image: url("img/black-rose.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
