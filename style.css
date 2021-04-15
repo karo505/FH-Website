@@ -254,7 +254,7 @@ section#about {
 	background-color: #000;
 	display: flex;
 	padding: 3rem 0;
-	background-image: url("img/roza.jpg");
+	background-image: url("img/black-rose.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
 }
@@ -435,7 +435,7 @@ a.contact-text-gold {
 }
 
 hr {
-	width: 71rem;
+	width: 90%;
 	margin: auto;
 	color: #fff;
 	margin-bottom: 4rem;
@@ -623,10 +623,6 @@ p.footer {
 
 	.three-columns:nth-child(3)::after {
 		display: none;
-	}
-
-	hr {
-		width: 45rem;
 	}
 }
 
