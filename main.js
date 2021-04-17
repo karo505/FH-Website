@@ -1,24 +1,26 @@
-var menu = document.querySelector(".menu-mobile");
-var ham = document.querySelector(".ham");
-var xIcon = document.querySelector(".xIcon");
-var menuIcon = document.querySelector(".menuIcon");
+document.addEventListener("DOMContentLoaded", function () {
+	var menu = document.querySelector(".menu-mobile");
+	var ham = document.querySelector(".ham");
+	var xIcon = document.querySelector(".xIcon");
+	var menuIcon = document.querySelector(".menuIcon");
 
-ham.addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-	if (menu.classList.contains("showMenu")) {
-		menu.classList.remove("showMenu");
-		xIcon.style.display = "none";
-		menuIcon.style.display = "block";
-	} else {
-		menu.classList.add("showMenu");
-		xIcon.style.display = "block";
-		menuIcon.style.display = "none";
+	function toggleMenu() {
+		if (menu.classList.contains("showMenu")) {
+			menu.classList.remove("showMenu");
+			xIcon.style.display = "none";
+			menuIcon.style.display = "block";
+		} else {
+			menu.classList.add("showMenu");
+			xIcon.style.display = "block";
+			menuIcon.style.display = "none";
+		}
 	}
-}
 
-var menuLinks = document.querySelectorAll(".menuLink");
+	ham.addEventListener("click", toggleMenu);
 
-menuLinks.forEach(function (menuLink) {
-	menuLink.addEventListener("click", toggleMenu);
+	var menuLinks = document.querySelectorAll(".menuLink");
+
+	menuLinks.forEach(function (menuLink) {
+		menuLink.addEventListener("click", toggleMenu);
+	});
 });
