@@ -6,6 +6,7 @@
 	--header-font: "Old Standard TT", "Georgia", serif;
 	--max-large: 1140px;
 	--min-large: 130px;
+	--max-medium: 71rem;
 }
 
 body {
@@ -50,7 +51,7 @@ p.button-text {
 }
 
 .section-row {
-	max-width: 71rem;
+	max-width: var(--max-medium);
 	min-height: 130px;
 	display: flex;
 	position: relative;
@@ -388,7 +389,7 @@ h3.contact__title {
 }
 
 .contact__container {
-	max-width: 71rem;
+	max-width: var(--max-medium);
 	min-height: 130px;
 	display: block;
 	position: relative;
@@ -459,7 +460,7 @@ hr {
 /* ---Footer-links--- */
 
 #footer-links {
-	width: 71rem;
+	width: var(--max-medium);
 	margin: auto;
 	display: flex;
 }
