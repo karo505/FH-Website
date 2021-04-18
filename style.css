@@ -42,11 +42,11 @@ button {
 	font-family: var(--header-font);
 	text-align: center;
 	border: solid 1px var(--gold-color);
-	font-size: 2rem;
 }
 
 p.button-text {
 	padding: 1rem;
+	font-size: 2rem;
 }
 
 .section-row {
@@ -78,7 +78,7 @@ nav.menu {
 	max-width: var(--max-large);
 	min-height: var(--min-large);
 	position: relative;
-	z-index: 999;
+	z-index: 2;
 	display: flex;
 	margin-right: auto;
 	margin-left: auto;
@@ -167,7 +167,7 @@ a.menu-item__link::after {
 	bottom: 0.2rem;
 	height: 0.2rem;
 	width: 100%;
-	z-index: 2;
+	z-index: 1;
 	background-color: #fff;
 	position: absolute;
 	left: 0;
@@ -190,7 +190,7 @@ section.logo {
 
 .logo__row {
 	max-width: 15.3rem;
-	z-index: 2;
+	z-index: 1;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -348,7 +348,6 @@ section#grave-care {
 	background-image: url(img/opieka-nad-grobami.jpg);
 	background-position: center;
 	background-size: cover;
-	min-height: 500px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -542,7 +541,7 @@ p.footer {
 	/* Hamburger menu   */
 	.ham {
 		position: fixed;
-		z-index: 100;
+		z-index: 2;
 		top: 1rem;
 		right: 1rem;
 		width: 3rem;
@@ -570,7 +569,7 @@ p.footer {
 		transform: translateY(-100%);
 		transition: transform 0.2s;
 		list-style: none;
-		padding: 4rem;
+		padding: 0 4rem;
 		display: block;
 	}
 
@@ -681,12 +680,50 @@ p.footer {
 	}
 }
 
+@media all and (max-width: 1024px) and (orientation: landscape) {
+	.main-header__title {
+		font-size: 2rem;
+		margin-top: 6rem;
+	}
+
+	.main-header__image {
+		padding: 4rem;
+	}
+
+	.main-header__image img {
+		width: 3rem;
+	}
+}
+
 /* iPads, Tablets */
 
 @media all and (max-width: 768px) {
 	.menu__phone__title,
 	.menu__phone__number {
 		font-size: 1.3rem;
+	}
+
+	.main-header {
+		width: 80%;
+	}
+
+	.main-header__title {
+		font-size: 2em;
+	}
+
+	.main-header__image {
+		padding: 2rem;
+	}
+
+	.main-header__image img {
+		width: 3.5rem;
+	}
+}
+
+@media all and (max-width: 768px) and (orientation: landscape) {
+	.main-header__title {
+		font-size: 1.6rem;
+		margin-top: 4.5rem;
 	}
 }
 
@@ -707,7 +744,7 @@ p.footer {
 	}
 
 	.main-header__title {
-		font-size: 2.5rem;
+		/* font-size: 2.5rem; */
 	}
 
 	.main-header__image {
@@ -770,5 +807,28 @@ p.footer {
 	}
 	#footer-links {
 		width: 80%;
+	}
+}
+
+/* Small mobile devices */
+@media all and (max-width: 320px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	section#speaker {
+		padding: 0;
+	}
+
+	.section-row {
+		max-width: 15rem;
+	}
+
+	p.button-text {
+		font-size: 1.3rem;
+	}
+
+	.footer-link__image {
+		width: 10rem;
 	}
 }
