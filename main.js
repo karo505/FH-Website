@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-	var menu = document.querySelector(".menu-mobile");
-	var ham = document.querySelector(".ham");
-	var xIcon = document.querySelector(".xIcon");
-	var menuIcon = document.querySelector(".menuIcon");
+	let menu = document.querySelector(".menu-mobile");
+	let ham = document.querySelector(".ham");
+	let xIcon = document.querySelector(".xIcon");
+	let menuIcon = document.querySelector(".menuIcon");
 
 	function toggleMenu() {
 		if (menu.classList.contains("showMenu")) {
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	ham.addEventListener("click", toggleMenu);
 
-	var menuLinks = document.querySelectorAll(".menuLink");
+	let menuLinks = document.querySelectorAll(".menuLink");
 
 	menuLinks.forEach(function (menuLink) {
 		menuLink.addEventListener("click", toggleMenu);
