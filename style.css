@@ -4,6 +4,8 @@
 	padding: 0;
 	--gold-color: #d2b429;
 	--header-font: "Old Standard TT", "Georgia", serif;
+	--max-large: 1140px;
+	--min-large: 130px;
 }
 
 body {
@@ -11,7 +13,7 @@ body {
 	margin: 0;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
-	font-size: 20px;
+	/* font-size: 20px; */
 	color: white;
 }
 
@@ -73,8 +75,8 @@ h3.white {
 /*---Nav---*/
 
 nav.menu {
-	max-width: 1140px;
-	min-height: 130px;
+	max-width: var(--max-large);
+	min-height: var(--min-large);
 	position: relative;
 	z-index: 999;
 	display: flex;
@@ -328,8 +330,8 @@ li.service-list-item {
 }
 
 .services__row {
-	max-width: 1140px;
-	min-height: 130px;
+	max-width: var(--max-large);
+	min-height: var(--min-large);
 	display: block;
 	position: relative;
 	margin-left: auto;
