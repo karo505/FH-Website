@@ -327,6 +327,11 @@ li.service-list-item {
 	width: 22rem;
 	box-shadow: 0 0 0.5rem 0.25rem rgb(0 0 0 / 10%);
 	object-fit: cover;
+	filter: saturate(0.3);
+}
+
+.service-list-image img:hover {
+	filter: none;
 }
 
 .services__row {
